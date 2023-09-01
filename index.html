@@ -4,19 +4,96 @@
     <meta charset="UTF-8">
     <meta name="author" content="ApexOrb">
     <meta name="description" content="This is a webpage to advertise a boutique">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 <title> Liz's Boutique</title>
 <link rel="stylesheets" href="main.css" type="text/css">
+<style>
+   
+img.a {
+  border-radius:;
+  float:left;
+}
+h1 {
+    font-size:34px;
+font-family:fantasy;
+}
+.b
+{
+font-size:2rem;
+font-weight:700;
+padding:0.5em 1em;
+color: var(--clr-rgba);
+border:10px solid var(--clr-accent);
+border-radius: 5px;
+}
+.b:hover{
+    transform:translateY(-10px);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+
+img.a{
+font-size:2rem;
+font-weight:700;
+padding:0.5em 1em;
+color: var(--clr-rgba);
+border:10px solid var(--clr-accent);
+border-radius: 5px;
+}
+.a:hover{
+    transform:translateY(-10px);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+
+.container{
+    height:300vh;
+    width:100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+    background-position: 0 50%;
+}
+50%{
+    background-position: 100% 50%;
+}    100%{
+    background-position: 0 50%;
+}
+}
+ .f:visited{
+    color:#d2001a;
+
+}
+.f:hover{
+    color:orangered;
+}
+h2{
+
+    font-size:55;
+}
+body{
+font-family:serif;
+}
+</style>
 
 </head>
 <body>
-    <h1> <img class="headerr" src="img/vintage-1893032_640 vbngng.jpg" alt="favicon I guess" width="55" hight="72"
-        title="Little nice icon"> Eliza's Boutique</h1>
-    <p>Welcome to the official site for Eliza's store</p>
+    <div class="container">
+<img class="a" src="img/vintage-1893032_640 vbngng.jpg" alt="favicon I guess" width="55" height="72"
+        title="Little nice icon"> <hr>
+        <button class="b"> <h1>Eliza's Boutique</h1>
+        </button>
+        
+    <p> <i>Welcome to the official site for Eliza's store<i></p>
+    
     <hr>
     <h2>What you can expect from us</h2>
     <figure>
         
-    <img src="img/btqkak.jpg" alt="Image showing inside the boutique" width="960" height="1280" 
+    <img src="img/boutique11.jpg" alt="Image showing inside the boutique" width="375" height="500" 
     title="Dresses on display" loading="lazy">
  <figcaption>
     Items on display
@@ -32,7 +109,7 @@
         Items on offer include:
     </h3>
     <figure>
-        <img src="img/btgas.jpg" width="960" height="1280" alt="Inside boutique items on display"
+        <img src="img/boutique22.jpg" width="375" height="500" alt="Inside boutique items on display"
         title="Items on dsiplay" loading="lazy">
         <figcaption> 
             Showcase 
@@ -42,6 +119,12 @@
         <li>Dresses</li>
         <li>Jeans</li>
         <li>Cosmetic items like body sprays</li>
+        <figure>
+            <img src="img/boutique33.jpg" alt="showcasing the interior" width="375" height="500"> 
+        <figcaption>
+            Showcasing the interior
+        </figcaption>
+        </figure>
     </ul> 
     
     <hr>
@@ -50,13 +133,13 @@
     Kisaasi, Opposite total Gas Station <br>
     Just before Mariam High School
 <hr>
-&lt;&lt;&lt; &copy; <a href="about.html" title="About author"> Apex Orb &gt;&gt;&gt;
+&lt;&lt;&lt; &copy; <a class="f" href="about.html" title="About author"> Apex Orb &gt;&gt;&gt;
     
 <address>
     This Website was developed by ApexOrb <br>
     Reach out to us for all your web needs<br>
     
 </address>
-
+</div>
 </body>
  </html>
