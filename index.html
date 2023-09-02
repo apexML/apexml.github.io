@@ -17,8 +17,9 @@ margin:auto;
    
 h1 {color:rgb(255, 0, 76);
     font-size:34px;
-font-family:fantasy;
-text-shadow: 2px -5px 4px black;
+    font-family:fantasy;
+    text-shadow: 2px -5px 4px black;
+    text-align:start;
 }
 
 @keyframes animate{
@@ -26,27 +27,30 @@ text-shadow: 2px -5px 4px black;
         background-position:0%;
     }
     100%{
-        background-color: 200%;
+        background-color: 0%;
     }
 }
 .b
 {
 font-size:2rem;
+height:100%;
 font-weight:700;
-padding:0.5em 1em;
-margin:0.25em;
+padding:none;
+margin:none;
 outline:gold;
-background: #dddddd;
+background: none;
 cursor:pointer;
 color: var(--clr-rgba);
-border:10px solid var(--clr-accent);
+border:1px solid var(--clr-accent);
 border-radius: 5px;
-box-sizing:content-box;
-background-color:#2ac2ae;
-height:51px;
+box-sizing:unset;
+background-color:none;
+height:32px;
 display:flex;
-box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+box-shadow:none;
 font-family:fantasy;
+text-align:center;
+float:center;
 
 }
 .b:hover{
@@ -72,7 +76,7 @@ border-radius: 20px;
 .container{
     height:300vh;
     width:100%;
-    background: linear-gradient(45deg,#41d9ff,#b6adad,#abbbaf,#ffffff);
+    background: linear-gradient(45deg,#336a77,#124236,#f0f0f0,#ffffff);
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
     border-radius:14px;
@@ -141,6 +145,7 @@ body{
 font-family:serif;
 height:250vh;
 display:grid;
+color:linear-gradient()
 }
 
 img{
@@ -153,32 +158,32 @@ span{
     text-decoration: deeppink;
     display:block;
     height:100%;
-    padding-left: 10px;
-    border: 1px solid rgb(3, 92, 84);
-    borer-radius:0.8px;
-    animation: spin_words 6s infinite;
+    padding-left:none;
+    border: none;
+    borer-radius:none;
+    animation: spin_words 6s infinite alternate-reverse;
 }
 @keyframes spin_words{
     10%{
-        transform:translateY(-112%);
+        transform:translateY(-120%);
     
     }
     25%{
         transform: translateY(-100%);
     }
     35%{
-        transform:translateY(-212%);
+        transform:translateY(-220%);
     }
     50%{
         transform: translateY(-200%);
     }
     60%{
-        transform: translateY(-312%);
+        transform: translateY(-320%);
     }75%{
         transform: translateY(-300%);
     }
     85%{
-        transform: translateY(-412%);
+        transform: translateY(-420%);
     }100%{
         transform: translateY(-400%);
     }
@@ -202,7 +207,7 @@ span{
         border: none;
         text-shadow: 2px -5px 4px black;
         display:inline-block;
-        color:rgb(255, 0, 85);
+        color:rgb(0, 0, 0);
         font-size:2em;
         font-family:monospace;
         text-transform:lowercase;
@@ -219,7 +224,9 @@ span{
             transform: translateY(-20px);
         }
     }
-
+.er{
+    float:inline-end;
+}
 
 </style>
 
@@ -239,6 +246,7 @@ span{
             </div>
 
         </div>
+        <br><br>
         
     <section id="Welcome"><p class="n"> <i>Welcome to the official site for Liz's store
         <p>
@@ -296,7 +304,8 @@ span{
         <hr>
         <p>
         <figure>
-            <img src="img/boutique33.jpg" alt="showcasing the interior" width="375" height="500"> 
+            
+            <img src="img/boutique33.jpg" class="er" alt="showcasing the interior" width="375" height="500"> 
         <figcaption>
             Showcasing the interior
         </figcaption>
