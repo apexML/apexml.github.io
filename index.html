@@ -9,13 +9,19 @@
 <link rel="stylesheets" href="main.css" type="text/css">
 <style>
    
-img.a {
-  border-radius:15px;
-  float:left;
-}
-h1 {
+h1 {color:rgb(255, 0, 76);
     font-size:34px;
 font-family:fantasy;
+text-shadow: 2px -5px 4px black;
+}
+
+@keyframes animate{
+    0%{
+        background-position:0%;
+    }
+    100%{
+        background-color: 400%;
+    }
 }
 .b
 {
@@ -29,6 +35,12 @@ cursor:pointer;
 color: var(--clr-rgba);
 border:10px solid var(--clr-accent);
 border-radius: 5px;
+box-sizing:content-box;
+background-color:#2ac2ae;
+height:51px;
+display:flex;
+box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+font-family:fantasy;
 
 }
 .b:hover{
@@ -54,7 +66,7 @@ border-radius: 20px;
 .container{
     height:300vh;
     width:100%;
-    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background: linear-gradient(45deg,#08bdeb,#b6adad,#15fa4e,#e7750b);
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
     border-radius:14px;
@@ -88,26 +100,82 @@ h2{
 
 body{
 font-family:serif;
+height:250vh;
+display:grid;
 }
+
 img{
     border-radius:15px;
 }
 
+span{
+    color:rgb(255, 0, 76);
+    text-shadow: 2px -5px 4px black;
+    text-decoration: deeppink;
+    display:block;
+    height:100%;
+    padding-left: 10px;
+    border: 1px solid rgb(3, 92, 84);
+    animation: spin_words 6s infinite;
+}
+@keyframes spin_words{
+    10%{
+        transform:translateY(-112%);
+    
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform:translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }100%{
+        transform: translateY(-400%);
+    }
+}
+.words{
+    overflow:hidden;
+}
+    
+    
+    h2{
+        font-family:'Brush script m7';
+    }
 
 </style>
 
 </head>
 <body>
+   
     <div class="container">
-<img class="a" src="img/vintage-1893032_640 vbngng.jpg" alt="favicon I guess" width="55" height="72"
-        title="Little nice icon"> <hr>
-        <button class="b"> <h1>Eliza's Boutique</h1>
-        </button>
+        <div class="b"> <h1> Liz's</h1>
+            <div class="words">
+                <span> boutique </span>
+                <span> store</span>
+                <span> outlet </span>
+                <span> emporium </span>
+                <span> boutique </span>
+            </div>
+
+        </div>
         
-    <p> <i>Welcome to the official site for Eliza's store<i></p>
+    <p class="n"> <i>Welcome to the official site for Liz's store
+        <p>
+            Happy Shopping
+        </p><i></p>
     
     <hr>
-    <h2>What you can expect from us</h2>
+    <h2>What you can <strong>expect</strong> from us:</h2>
     <figure>
         
     <img src="img/boutique11.jpg" alt="Image showing inside the boutique" width="375" height="500" 
