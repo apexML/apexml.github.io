@@ -1,7 +1,9 @@
-@media screen and(max-width:600px){
-    h1{
-        font-size:15px;
-        line-height: 25px;
-
-    }
-    side}
+body {
+    margin: 0;
+    width:100%;
+    height:100%;
+    font-family: "Black Ops One", cursive;
+    color: aliceblue;
+    background: #1a1f25;
+  }
+  

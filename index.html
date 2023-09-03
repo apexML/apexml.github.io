@@ -1,242 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="ApexOrb">
     <meta name="description" content="This is a webpage to advertise a boutique">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-<title> Liz's Boutique</title>
-<link rel="stylesheets" href="main.css" type="text/css">
-<style>
-nav{
-justify-content: space-around;
-margin:auto;
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        nav {
+            justify-content: space-around;
+            margin: auto;
 
-}
-   
-h1 {color:rgb(255, 0, 76);
-    font-size:34px;
-    font-family:fantasy;
-    text-shadow: 2px -5px 4px black;
-    text-align:start;
-}
-
-@keyframes animate{
-    0%{
-        background-position:0%;
-    }
-    100%{
-        background-color: 0%;
-    }
-}
-.b
-{
-font-size:2rem;
-height:100%;
-font-weight:700;
-padding:none;
-margin:none;
-outline:gold;
-background: none;
-cursor:pointer;
-color: var(--clr-rgba);
-border:1px solid var(--clr-accent);
-border-radius: 5px;
-box-sizing:unset;
-background-color:none;
-height:32px;
-display:flex;
-box-shadow:none;
-font-family:fantasy;
-text-align:center;
-float:center;
-
-}
-.b:hover{
-    transform:translateY(-10px);
-    background-color: var(--clr-accent);
-    color: var(--clr-light);
-}
-
-img.a{
-font-size:2rem;
-font-weight:700;
-padding:0.5em 1em;
-color: var(--clr-rgba);
-border:10px solid var(--clr-accent);
-border-radius: 20px;
-}
-.a:hover{
-    transform:translateY(-10px);
-    background-color: var(--clr-accent);
-    color: var(--clr-light);
-}
-
-.container{
-    height:380vh;
-    width:100%;
-    background: linear-gradient(45deg,#336a77,#124236,#f0f0f0,#ffffff);
-    background-size: 300% 300%;
-    animation: color 12s ease-in-out infinite;
-    border-radius:14px;
-    
-}
-
-@keyframes color{
-    0%{
-    background-position: 0 50%;
-}
-50%{
-    background-position: 100% 50%;
-}    100%{
-    background-position: 0 50%;
-}
-}
-@media only screen and(max-width:414px)
-{
-    .container{
-        visibility:collapse;
-    }
-}
-a{
-    position:relative;
-    text-decoration:none;
-    color:rgb(0, 0, 0);
-    letter-spacing: 0.2px;
-    padding:0 10px;
-
-}
-
-a:after{
-    content:"";
-    position: absolute;
-    background-color: rgb(255, 0, 64);
-    height:3px;
-    width:0;
-    left:0;
-    bottom:-10px;
-    transition: 0.3s;
-    font-family:monospace;
-    font-weight: bolder;
-   
-    
-}
- a:visited{
-    color:#ff0000;
-
-}
-a:hover{
-    color:rgb(255, 174, 0);
-}
-a:hover:after{
-    color:orangered;
-    width:100%;
-}
-a:active{
-    color:gold;
-}
-h2{
-
-    font-size:55;
-}
-
-body{
-font-family:serif;
-height:250vh;
-display:grid;
-color:linear-gradient()
-}
-
-img{
-    border-radius:15px;
-}
-
-span{
-    color:rgb(255, 0, 76);
-    text-shadow: 2px -5px 4px black;
-    text-decoration: deeppink;
-    display:block;
-    height:100%;
-    padding-left:none;
-    border: none;
-    borer-radius:none;
-    animation: spin_words 6s infinite alternate-reverse;
-    margin-top:20px;
-}
-@keyframes spin_words{
-    10%{
-        transform:translateY(-120%);
-    
-    }
-    25%{
-        transform: translateY(-100%);
-    }
-    35%{
-        transform:translateY(-220%);
-    }
-    50%{
-        transform: translateY(-200%);
-    }
-    60%{
-        transform: translateY(-320%);
-    }75%{
-        transform: translateY(-300%);
-    }
-    85%{
-        transform: translateY(-420%);
-    }100%{
-        transform: translateY(-400%);
-    }
-}
-.words{
-    overflow:hidden;
-}
-    
-    
-    h2{
-        font-family:'Brush script m7';
-    }
-    wavey{
-        position:relative;
-        -webkit-box-reflect: below -12px linear-gradient(
-            transparent, rgb(0, 217, 255));
-    
-    }
-    .wavey span{
-        position:relative;
-        border: none;
-        text-shadow: 2px -5px 4px black;
-        display:inline-block;
-        color:rgb(0, 0, 0);
-        font-size:2em;
-        font-family:monospace;
-        text-transform:lowercase;
-        animation: animatey 1s ease-in-out infinite alternate;
-        animation-delay: calc(0.4s* var(--i));
-      
-    }
-    
-    @keyframes animatey {
-        0%{
-            transform: translateY(0px);
-        }20%{
-            transform: translateY(-20px);
-        }40%{
-            transform: translateY(-20px);
         }
-    }
-.er{
-    float:inline-end;
-}
 
-</style>
+        ul {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background: #1a1f25;
+            height: 250vh;
+            display: grid;
+            text-align: center;
+            font-size: 50px;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: "Black Ops One", cursive;
+            color: rgb(0, 119, 255);
+            background: #1a1f25;
+
+        }
+
+        h1 {
+            color: rgb(255, 0, 76);
+            font-size: 34px;
+            text-shadow: 2px -5px 4px black;
+            text-align: start;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-color: 0%;
+            }
+        }
+
+        div {
+            text-align: center;
+        }
+
+        .b {
+            font-size: 2rem;
+            height: 100%;
+            font-weight: 700;
+            padding: none;
+            margin: none;
+            outline: gold;
+            background: none;
+            cursor: pointer;
+            color: var(--clr-rgba);
+            border: 1px solid var(--clr-accent);
+            border-radius: 5px;
+            box-sizing: unset;
+            background-color: none;
+            height: 32px;
+            display: flex;
+            box-shadow: none;
+            text-align: center;
+            float: center;
+
+        }
+
+        .b:hover {
+            transform: translateY(-10px);
+            background-color: var(--clr-accent);
+            color: var(--clr-light);
+            text-align: center;
+        }
+
+        img.a {
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0.5em 1em;
+            color: var(--clr-rgba);
+            border: 10px solid var(--clr-accent);
+            border-radius: 20px;
+        }
+
+        .a:hover {
+            transform: translateY(-10px);
+            background-color: var(--clr-accent);
+            color: var(--clr-light);
+        }
+
+        .container {
+            height: 420vh;
+            width: 100%;
+            background: linear-gradient(45deg, #336a77, #124236, #f0f0f0, #ffffff);
+            background-size: 300% 300%;
+            animation: color 12s ease-in-out infinite;
+            border-radius: 14px;
+            text-align: center;
+            float: inline-start;
+
+        }
+
+        @keyframes color {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        @media only screen and(max-width:414px) {
+            .container {
+                visibility: collapse;
+            }
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            letter-spacing: 0.2px;
+            padding: 0 10px;
+
+        }
+
+        a:after {
+            content: "";
+            position: absolute;
+            background-color: rgb(255, 0, 64);
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+            font-family: monospace;
+            font-weight: bolder;
+
+
+        }
+
+        a:visited {
+            color: #ff0000;
+
+        }
+
+        a:hover {
+            color: rgb(255, 174, 0);
+        }
+
+        a:hover:after {
+            color: orangered;
+            width: 100%;
+        }
+
+        a:active {
+            color: gold;
+        }
+
+        h2 {
+
+            font-size: 55;
+        }
+
+        img {
+            border-radius: 15px;
+        }
+
+        span {
+            color: rgb(255, 0, 76);
+            text-shadow: 2px -5px 4px black;
+            text-decoration: deeppink;
+            display: block;
+            height: 100%;
+            padding-left: none;
+            border: none;
+            borer-radius: none;
+            animation: spin_words 6s infinite alternate-reverse;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        @keyframes spin_words {
+            10% {
+                transform: translateY(-120%);
+
+            }
+
+            25% {
+                transform: translateY(-100%);
+            }
+
+            35% {
+                transform: translateY(-220%);
+            }
+
+            50% {
+                transform: translateY(-200%);
+            }
+
+            60% {
+                transform: translateY(-320%);
+            }
+
+            75% {
+                transform: translateY(-300%);
+            }
+
+            85% {
+                transform: translateY(-420%);
+            }
+
+            100% {
+                transform: translateY(-400%);
+            }
+        }
+
+        .words {
+            overflow: hidden;
+        }
+
+
+        h2 {
+            font-family: 'Brush script m7';
+        }
+
+        wavey {
+            position: relative;
+            -webkit-box-reflect: below -12px linear-gradient(transparent, rgb(0, 217, 255));
+
+        }
+
+        .wavey span {
+            position: relative;
+            border: none;
+            text-shadow: 2px -5px 4px black;
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            font-size: 2em;
+            font-family: monospace;
+            text-transform: lowercase;
+            animation: animatey 1s ease-in-out infinite alternate;
+            animation-delay: calc(0.4s* var(--i));
+
+        }
+
+        
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+            overflow-x: hidden;
+        }
+
+        .indigo {
+            background: rgba(33, 0, 221, 0.911);
+        }
+
+        .red {
+            background: red;
+        }
+
+        .pink {
+            background: rgb(243, 111, 3);
+        }
+
+        .dark {
+            background: black;
+        }
+
+        .curve {
+            position: absolute;
+            height: 225px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .curve::before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: rgb(19, 26, 20);
+            transform: translate(85%, 60%);
+            visibility: hidden;
+        }
+
+        .curve::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: rgb(0, 26, 255);
+            transform: translate(-4%, 40%);
+            z-index: -1;
+        }
+
+        .bubble::after {
+            content: "";
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+            position: absolute;
+            bottom: 0;
+            height: 85%;
+            width: 100%;
+
+            z-index: -1;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(103% + 1.3px);
+            height: 262px;
+        }
+
+        s .spacer {
+            aspect-ratio: 900/300;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url(./layer1.svg.svg);
+        }
+
+        .layer2 {
+            background-image: url(./blobbbb.svg);
+        }
+
+        .flip {
+            transform: rotate(180deg);
+        }
+
+        .blob-motion {
+            position: absolute;
+            transform: translateY(-20%);
+            z-index: 0;
+        }
+
+        .blob-content {
+            z-index: 1;
+        }
+
+        .blobs {
+            width: 100%;
+            background: url("./blobs.svg") no-repeat bottom / cover;
+        }
+
+        .def::after {
+            content: "";
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+            position: absolute;
+            bottom: 0;
+            height: 85%;
+            width: 100%;
+            background-color: rgb(255, 123, 0);
+            z-index: -1;
+        }
+
+        .ko::after {
+            content: "";
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+            position: absolute;
+            bottom: 0;
+            height: 85%;
+            width: 100%;
+            background-color: rgb(43, 167, 125);
+            z-index: -1;
+        }
+
+        .coral::after {
+            content: "";
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+            position: absolute;
+            bottom: 0;
+            height: 85%;
+            width: 100%;
+            background-color: rgb(0, 132, 255);
+            z-index: -1;
+        }
+
+        hr {
+            opacity: inherit;
+            visibility: hidden;
+        }
+
+        button {
+            color: #fff6f6;
+            background-color: chocolate;
+            border: 1px;
+            border-radius: 1px;
+            size: 35px;
+        }
+
+        button:hover {
+            background-color: rgb(6, 7, 7)'
+
+        }
+
+        button:active {
+            background-color: crimson;
+
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            letter-spacing: 0.2px;
+            padding: 0 10px;
+
+        }
+
+        a:after {
+            content: "";
+            position: absolute;
+            background-color: rgb(255, 0, 64);
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+            font-family: monospace;
+            font-weight: bolder;
+
+
+        }
+
+        a:visited {
+            color: #88747491;
+
+        }
+
+        a:hover {
+            color: rgb(255, 174, 0);
+        }
+
+        a:hover:after {
+            color: orangered;
+            width: 100%;
+        }
+
+        a:active {
+            color: gold;
+        }
+
+        img {
+            border-radius: 15px;
+        }
+
+        @keyframes animatey {
+            0% {
+                transform: translateY(0px);
+            }
+
+            20% {
+                transform: translateY(-20px);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .er {
+            float: inline-end;
+        }
+    </style>
 
 </head>
+
 <body>
-  
+
     <div class="container">
-        <div class="b"> <h1> Liz's</h1>
+        <div class="b">
+            <h1> Liz's</h1>
             <div class="words">
                 <span> boutique </span>
                 <span> store</span>
@@ -249,91 +531,99 @@ span{
 
         </div>
         <br><br>
-        
-    <section id="Welcome"><p class="n"> <i>Welcome to the official site for Liz's store
-        <p>
-            Happy Shopping
-        </p>
-        <i>
 
-        </p>
+        <section id="Welcome">
+            <p class="n"> <i>Welcome to the official site for Liz's store
+                    <p>
+                        Happy Shopping
+                    </p>
+                    <i>
+
+            </p>
         </section>
-         <nav>
-                <a href="#Welcome"> Greetings</a>
-                <a href="#On-Offer">Look around</a>
-         </nav>
-        
-    <hr>
-    <div class="wavey">
-     <span style="--i:1;">What</span> 
-     <span style="--i:2;" >you</span>
-     <span style="--i:3;" > can </span>
-     <span style="--i:4;" >expect </span>
-     <span style="--i:5;" >from</span>
-     <span style="--i:6;" > us</span>
-     <span style="--i:7;" >:</span>
-            </div>
-    <figure>
-        
-    <img src="img/boutique11.jpg" alt="Image showing inside the boutique" width="375" height="500" 
-    title="Dresses on display" loading="lazy">
- <figcaption>
-    Items on display
- </figcaption>
-</figure>
-    <ul>
-        <li>Top quality designer outfits at incredible prices</li>
-        <li>Best in class female attires</li>
-        <li>Guaranteed statisfaction with your purchase</li>
-    </ul>
-    <hr>
+        <nav>
+            <a href="#Welcome"> Greetings</a>
+            <a href="#On-Offer">Look around</a>
+        </nav>
 
-    <section id="On-Offer">
-    <h3>
-        Items on offer include:
-    </h3>
-    <figure>
-        <img src="img/boutique22.jpg" width="375" height="500" alt="Inside boutique items on display"
-        title="Items on dsiplay" loading="lazy">
-        <figcaption> 
-            Showcase 
-        </figcaption>
-    </figure>
-    <ul>
-        <li>Dresses</li>
-        <li>Jeans</li>
-        <li>Cosmetic items like body sprays</li>
         <hr>
-        <p>
-        <figure>
-            
-            <img src="img/boutique33.jpg" class="er" alt="showcasing the interior" width="375" height="500"> 
-        <figcaption>
-            Showcasing the interior
-        </figcaption>
-        </figure>
-    </p>
-    </ul> 
-</section>
-    <hr>
-<h4>Where we are located</h4>
-<address>
-    Kisaasi, Opposite total Gas Station <br>
-    Just before Mariam High School
-<hr>
- <a href="about.html" title="About author">&lt;&lt;&lt; &copy; Apex Orb &gt;&gt;&gt;
-    
-<address>
-    This Website was developed by ApexOrb <br>
-    Reach out to us for all your web needs<br>
-    
-</address>
-<p>
-    <a href="#">Back To Top</a>
-</p>
+        <section>
+            <div class="wavey">
+                <span style="--i:1;">What</span>
+                <span style="--i:2;">you</span>
+                <span style="--i:3;"> can </span>
+                <span style="--i:4;">expect </span>
+                <span style="--i:5;">from</span>
+                <span style="--i:6;"> us</span>
+                <span style="--i:7;">:</span>
+            </div>
 
-</div> 
+            <figure>
 
+                <img src="img/boutique11.jpg" alt="Image showing inside the boutique" width="375" height="500"
+                    title="Dresses on display" loading="lazy">
+                <figcaption>
+                    Items on display
+                </figcaption>
+            </figure>
+            <ul>
+                <li>Top quality designer outfits at incredible prices</li>
+                <li>Best in class female attires</li>
+                <li>Guaranteed statisfaction with your purchase</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="pink" id="On-Offer">
+            <h3>
+                Items on offer include:
+            </h3>
+            <figure>
+                <img src="img/boutique22.jpg" width="375" height="500" alt="Inside boutique items on display"
+                    title="Items on dsiplay" loading="lazy">
+                <figcaption>
+                    Showcase
+                </figcaption>
+            </figure>
+            <ul>
+                <li>Dresses</li>
+                <li>Jeans</li>
+                <li>Cosmetic items like body sprays</li>
+                <hr>
+                <p>
+                <figure>
+
+                    <img src="img/boutique33.jpg" class="er" alt="showcasing the interior" width="375" height="500">
+                    <figcaption>
+                        Showcasing the interior
+                    </figcaption>
+                </figure>
+                </p>
+            </ul>
+        </section>
+        <hr>
+        <h4>Where we are located</h4>
+
+        <section class="red" >
+            <address>
+                Kisaasi, Opposite total Gas Station <br>
+                Just before Mariam High School
+                <hr>
+                <a href="about.html" title="About author">&lt;&lt;&lt; &copy; Apex Orb &gt;&gt;&gt;
+
+                    <address>
+                        This Website was developed by ApexOrb <br>
+                        Reach out to us for all your web needs<br>
+
+                    </address>
+                    <p>
+                        <a href="#">Back To Top</a>
+                    </p>
+
+    </div>
+    </section>
 
 </body>
- </html>
+
+</html>
