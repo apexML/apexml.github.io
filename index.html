@@ -8,10 +8,7 @@
     <meta name="description" content="This is a webpage to advertise a boutique">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet" />
     <style>
         nav {
             justify-content: space-around;
@@ -179,6 +176,49 @@
         a:active {
             color: gold;
         }
+        a.ad {
+            position: relative;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            letter-spacing: 0.2px;
+            padding: 0 10px;
+
+        }
+
+        a.ad:after {
+            content: "";
+            position: absolute;
+            background-color: rgb(10, 10, 10);
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+            font-family: monospace;
+            font-weight: bolder;
+
+
+        }
+
+        a.ad:visited {
+            
+            color: rgb(0, 255, 149);
+
+        }
+
+        a.ad:hover {
+            color: #fffb00;
+
+        }
+
+        a.ad:hover:after {
+            color: rgb(0, 247, 255);
+            width: 100%;
+        }
+
+        a.ad:active {
+            color: rgb(0, 255, 149);
+        }
 
         h2 {
 
@@ -205,7 +245,7 @@
 
         @keyframes spin_words {
             10% {
-                transform: translateY(-120%);
+                transform: translateY(-112%);
 
             }
 
@@ -214,7 +254,7 @@
             }
 
             35% {
-                transform: translateY(-220%);
+                transform: translateY(-212%);
             }
 
             50% {
@@ -222,7 +262,7 @@
             }
 
             60% {
-                transform: translateY(-320%);
+                transform: translateY(-312%);
             }
 
             75% {
@@ -230,7 +270,7 @@
             }
 
             85% {
-                transform: translateY(-420%);
+                transform: translateY(-412%);
             }
 
             100% {
@@ -247,9 +287,8 @@
             font-family: 'Brush script m7';
         }
 
-        wavey {
+        .wavey {
             position: relative;
-            -webkit-box-reflect: below -12px linear-gradient(transparent, rgb(0, 217, 255));
 
         }
 
@@ -267,7 +306,7 @@
 
         }
 
-        
+
         section {
             position: relative;
             display: flex;
@@ -283,11 +322,11 @@
         }
 
         .red {
-            background: red;
+            background: rgb(255, 0, 0);
         }
 
         .pink {
-            background: rgb(243, 111, 3);
+            background: rgb(255, 81, 0);
         }
 
         .dark {
@@ -557,7 +596,8 @@
                 <span style="--i:6;"> us</span>
                 <span style="--i:7;">:</span>
             </div>
-
+        </section>
+        <secton>
             <figure>
 
                 <img src="img/boutique11.jpg" alt="Image showing inside the boutique" width="375" height="500"
@@ -571,55 +611,54 @@
                 <li>Best in class female attires</li>
                 <li>Guaranteed statisfaction with your purchase</li>
             </ul>
-        </section>
+            </section>
+            <hr>
 
-        <hr>
-
-        <section class="pink" id="On-Offer">
-            <h3>
-                Items on offer include:
-            </h3>
-            <figure>
-                <img src="img/boutique22.jpg" width="375" height="500" alt="Inside boutique items on display"
-                    title="Items on dsiplay" loading="lazy">
-                <figcaption>
-                    Showcase
-                </figcaption>
-            </figure>
-            <ul>
-                <li>Dresses</li>
-                <li>Jeans</li>
-                <li>Cosmetic items like body sprays</li>
-                <hr>
-                <p>
+            <section class="pink" id="On-Offer">
+                <h3>
+                    Items on offer include:
+                </h3>
                 <figure>
-
-                    <img src="img/boutique33.jpg" class="er" alt="showcasing the interior" width="375" height="500">
+                    <img src="img/boutique22.jpg" width="375" height="500" alt="Inside boutique items on display"
+                        title="Items on dsiplay" loading="lazy">
                     <figcaption>
-                        Showcasing the interior
+                        Showcase
                     </figcaption>
                 </figure>
-                </p>
-            </ul>
-        </section>
-        <hr>
-        <h4>Where we are located</h4>
-
-        <section class="red" >
-            <address>
-                Kisaasi, Opposite total Gas Station <br>
-                Just before Mariam High School
-                <hr>
-                <a href="about.html" title="About author">&lt;&lt;&lt; &copy; Apex Orb &gt;&gt;&gt;
-
-                    <address>
-                        This Website was developed by ApexOrb <br>
-                        Reach out to us for all your web needs<br>
-
-                    </address>
+                <ul>
+                    <li>Dresses</li>
+                    <li>Jeans</li>
+                    <li>Cosmetic items like body sprays</li>
+                    <hr>
                     <p>
-                        <a href="#">Back To Top</a>
+                    <figure>
+
+                        <img src="img/boutique33.jpg" class="er" alt="showcasing the interior" width="375" height="500">
+                        <figcaption>
+                            Showcasing the interior
+                        </figcaption>
+                    </figure>
                     </p>
+                </ul>
+            </section>
+            <hr>
+            <h4>Where we are located</h4>
+
+            <section class="red">
+                <address>
+                    Kisaasi, Opposite total Gas Station <br>
+                    Just before Mariam High School
+                    <hr>
+                    <a class="ad"href="about.html" title="About author">&lt;&lt;&lt; &copy; Apex Orb &gt;&gt;&gt;
+
+                        <address>
+                            This Website was developed by ApexOrb <br>
+                            Reach out to us for all your web needs<br>
+
+                        </address>
+                        <p>
+                            <a class="ad"href="#">Back To Top</a>
+                        </p>
 
     </div>
     </section>
